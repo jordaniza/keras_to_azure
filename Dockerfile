@@ -1,6 +1,6 @@
 # choose a base image, in this case Python 3 with FROM
 
-FROM python:3
+FROM python:3.6
 
 # write commands to copy files and install dependencies:
 
@@ -11,6 +11,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # install dependencies
+RUN python -m pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # define the port number the container should expose

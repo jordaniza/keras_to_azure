@@ -1,1 +1,4 @@
 flask
+numpy
+requests
+tensorflow==2.0.0
