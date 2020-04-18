@@ -22,6 +22,13 @@ app.route('/get-category-prediction') takes a serialised numpy array in JSON for
 
 The numpy array should have shape (None, None, Number_of_categories) as the CNN is a Fully Convolutional Network and can take variable input shapes.
 
+# model.hdf5
+
+Model trained using tensorflow.keras Sequential CNN. The Model is a Fully Convolutional Network trained on Google Colab.
+
+the app and example python files reference the model using a relative path. If saving the model to a separate directory as the python files make sure to amend the directory.
+
+
 # example_payload.py
 
 Used for testing Flask and Docker implementations locally. Uses the request library to send POST requests of randomised data to whatever URL.
@@ -32,11 +39,11 @@ Note, when testing Docker, make sure Flask bindings are set to '0.0.0.0' and tha
 
 Docker dependencies file, current build:
 
-python 3.6
-tensorflow 2.0.0
-numpy
-json
-flask
+- python 3.6 
+- tensorflow 2.0.0
+- numpy
+- json
+- flask
 
 # areas for improvement:
 
