@@ -48,14 +48,3 @@ Docker dependencies file, current build:
 # Azure
 
 The model is currently hosted in an Azure Container Instance (ACI) at predixa-dynamix.eastus.azurecontainer.io:5000/
-
-# areas for improvement:
-
-- ~~Troubleshoot timeout issue with ACI~~ Port 5000 specified
-- Add validations on input size and shape - we have none at the moment
-- Add proper error handling & messaging in app.py - we have none at the moment
-- The Keras model in this repo needs to be replaced with a properly trained one, same format but this one is a throwaway
-- Need to migrate the Docker registry to private
-- ~~Forgot to remove debug mode from flask~~ Removed
-- Migrate to Azure Container Registry
-- Move Docker tag to **latest**
