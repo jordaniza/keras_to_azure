@@ -4,7 +4,7 @@ Codebase for deploying keras model to azure container
 This repo contains the files and folders necessary to run a Docker instance in an Azure Container.
 
 # Docker
-The relevant Docker Registry is jzia93/predixa-keras-model:working-version-1
+The relevant Docker Registry is jzia93/predixa-keras-model:working-version-1.1
 
 The Dockerfile is included in the repo. Note: due to compatability issues with Tensorflow 2.1.X we force Tensorflow 2.0.0. This is for the following reasons:
 
