@@ -47,7 +47,7 @@ Docker dependencies file, current build:
 
 # Azure
 
-The model is *currently* hosted in an Azure Container Instance (ACI) at predixa-dynamix.eastus.azurecontainer.io
+The model is *currently* hosted in an Azure Container Instance (ACI) at predixa-dynamix.eastus.azurecontainer.io:5000/
 
 # areas for improvement:
 

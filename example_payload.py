@@ -20,11 +20,17 @@ model = load_model('model-50-0.503.hdf5')
 print(model.predict(sample_request))
 """
 
+#change url based on local vs. azure deployment
+
+#url = 'http://predixa-dynamix.eastus.azurecontainer.io:5000/'
+url = 'http://predixa-dynamix.eastus.azurecontainer.io:5000/get-category-prediction'
 #url = "http://localhost:5000/get-category-prediction"
-url = "http://127.0.0.1:8888/get-category-prediction"
+#url = "http://127.0.0.1:8888/get-category-prediction"
+
 headers = {'Content-Type': 'application/json'}
 
 response = requests.request("POST", url, headers=headers, json = data).json()
+#response = requests.request("GET", url, headers=None).text
 
 print(f'Predictions: {response}')
 
